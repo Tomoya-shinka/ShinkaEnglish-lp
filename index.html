@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+  <title>Shinka English - 実践的な英語力を進化させる</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="sticky-header" class="sticky-header">
+    <div class="header-logo">Shinka English</div>
+    <div class="header-right">
+        <a href="https://eigo-app-project.web.app/" class="btn-primary header-btn">今すぐ無料で始める</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Shinka English</h1>
+      <p class="subtitle">実践的な英語力を進化させる</p>
+      <p class="description">覚えたい単語・例文を手軽に登録<br>タイピング力も鍛えられるWebアプリ</p>
+      <a href="https://eigo-app-project.web.app/" class="btn-primary">今すぐ無料で始める</a>
+      <div class="hero-image-wrapper carousel-container">
+    
+        <div class="carousel-track" id="track">
+          <img src="images/SE_簡単登録_単語.png" class="carousel-slide" alt="単語管理画面">
+          <img src="images/SE_覚えたい単語で4択クイズ.png" class="carousel-slide" alt="クイズ画面">
+          <img src="images/SE_覚えたい例文で タイピング練習 .png" class="carousel-slide" alt="タイピング画面">
+        </div>
+
+        <button class="carousel-btn prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-btn next-btn" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="carousel-nav" id="carouselNav"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="container">
+      <div class="feature-card">
+        <div class="feature-text">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-file-pen"></i>
+          </div>
+          <h2>単語や例文の記録・復習</h2>
+          <ul>
+            <li>PCでもスマホでも簡単登録</li>
+            <li>タグ付けしてグループ分け可能</li>
+            <li>登録情報をリストで管理</li>
+          </ul>
+          <p class="note">※無料版の場合、登録数に制限を設けております。</p>
+        </div>
+        <div class="feature-image">
+          <img src="images/SE_単語管理.png" alt="単語管理画面">
+        </div>
+      </div>
+
+      <div class="feature-card reverse"> <div class="feature-text">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-gamepad"></i>
+          </div>
+          <h2>覚えたい単語で4択クイズ</h2>
+          <ul>
+            <li>発音も確認できる！</li>
+            <li>ゲーム感覚で気軽に覚えよう</li>
+            <li>タグごとのテストも可能！</li>
+          </ul>
+          <p class="note highlight">※こちらの機能は有料版でのみご利用いただけます。</p>
+        </div>
+        <div class="feature-image">
+          <img src="images/SE_単語クイズ.png" alt="クイズ画面">
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-text">
+          <div class="icon-wrapper">
+            <i class="fa-solid fa-keyboard"></i>
+          </div>
+          <h2>覚えたい例文でタイピング練習</h2>
+          <ul>
+            <li>タイピング力を鍛えながら例文を覚えられる</li>
+            <li>テスト後にスコアを算出</li>
+            <li>タグごとのテストも可能！</li>
+          </ul>
+          <p class="note highlight">※こちらの機能は有料版でのみご利用いただけます。</p>
+        </div>
+        <div class="feature-image">
+          <img src="images/SE_タイピングテスト.png" alt="タイピング画面">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="target">
+    <div class="container">
+        <h2 class="section-title">こんな方にオススメ</h2>
+        <div class="target-grid">
+            
+            <div class="target-card">
+                <div class="target-icon">
+                    <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <p>海外留学を<br>検討中の方</p>
+            </div>
+
+            <div class="target-card">
+                <div class="target-icon">
+                    <i class="fa-solid fa-laptop"></i>
+                </div>
+                <p>PCで英語試験を<br>受ける予定の方</p>
+            </div>
+
+            <div class="target-card">
+                <div class="target-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <p>英語でのチャットや<br>メールが必須の社会人</p>
+            </div>
+
+            <div class="target-card">
+                <div class="target-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <p>実用的な英語力を<br>身につけたい方</p>
+            </div>
+
+        </div>
+    </div>
+  </section>
+
+  <section class="cta-bottom">
+    <div class="container">
+      <h2>まずは無料版からお試しください</h2>
+      <p>あなた自身に特化した英語学習を始められます</p>
+      <a href="https://eigo-app-project.web.app/" class="btn-primary">今すぐ無料で始める</a>
+      <div class="footer-notes">
+        <p>※PCでの利用を推奨しています（スマホでも操作可能）</p>
+        <p>※有料版のご案内はアプリ内の「実力テスト」ページからご確認いただけます</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-sns">
+      <a href="https://www.instagram.com/tomoya.shinka/#" target="_blank" class="sns-link instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+            
+      <a href="https://x.com/tomoya_shinka" target="_blank" class="sns-link x-twitter">
+          <i class="fa-brands fa-x-twitter"></i>
+      </a>
+            
+      <a href="https://youtube.com/@tomoya.shinkavlog?si=cMuIjyHdd0AOMjBh" target="_blank" class="sns-link youtube">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    </div>
+
+    <p>Shinka English</p>
+  </footer>
+
+  <script>
+    // 必要な要素を取得
+    const header = document.getElementById('sticky-header');
+    const hero = document.querySelector('.hero');
+
+    // スクロールした時に実行される処理
+    window.addEventListener('scroll', () => {
+        // Heroセクションの高さより下にスクロールしたかチェック
+        if (window.scrollY > hero.offsetHeight - 100) { 
+            // 少し早め(-100px)に出現させる
+            header.classList.add('visible');
+        } else {
+            // 上に戻ったら隠す
+            header.classList.remove('visible');
+        }
+    });
+
+    // === 無限ループカルーセル（クローン方式） ===
+    const track = document.getElementById('track');
+    const originalSlides = Array.from(track.children);
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const dotsNav = document.getElementById('carouselNav');
+
+    // 1. スライドのクローン（分身）を作る
+    // 「最初の画像」のクローン（最後に置く用）
+    const firstClone = originalSlides[0].cloneNode(true);
+    firstClone.id = 'first-clone';
+
+    // 「最後の画像」のクローン（最初に置く用）
+    const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
+    lastClone.id = 'last-clone';
+
+    // トラックにクローンを追加： [最後の分身, 1, 2, 3, 最初の分身] の並びにする
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, originalSlides[0]);
+
+    // クローンを含めた全スライドを取得し直す
+    const slides = Array.from(track.children);
+
+    let counter = 1; // クローンが先頭に入ったので、本物の「1枚目」はインデックス1
+    let isTransitioning = false; // 連打防止用フラグ
+
+    // 2. 初期位置合わせ（分身ではなく本物の1枚目を表示）
+    track.style.transform = `translateX(${-100 * counter}%)`;
+
+    // ドットを作る（本物の枚数分だけ）
+    originalSlides.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('carousel-dot');
+        if (index === 0) dot.classList.add('active');
+        
+        dot.addEventListener('click', () => {
+            if (isTransitioning) return;
+            counter = index + 1; // クローン分ずらすので +1
+            updateSlide();
+            resetTimer();
+        });
+        dotsNav.appendChild(dot);
+    });
+    const dots = Array.from(dotsNav.children);
+
+    // 3. スライドを動かすメイン関数
+    function updateSlide() {
+        isTransitioning = true;
+        track.style.transition = "transform 0.5s ease-in-out"; // 動く時だけアニメーションON
+        track.style.transform = `translateX(${-100 * counter}%)`;
+        updateDots();
+    }
+
+    // ドットの表示更新
+    function updateDots() {
+        // クローン等の計算を補正して、現在どの画像（本物）を見ているか判定
+        let realIndex = counter - 1;
+        if (counter === 0) realIndex = originalSlides.length - 1; // 先頭クローンの場合
+        if (counter === slides.length - 1) realIndex = 0; // 末尾クローンの場合
+        
+        dots.forEach(d => d.classList.remove('active'));
+        // 安全装置（エラー防止）
+        if(dots[realIndex]) dots[realIndex].classList.add('active');
+    }
+
+    // 4. ボタン操作
+    nextBtn.addEventListener('click', () => {
+        if (isTransitioning || counter >= slides.length - 1) return;
+        counter++;
+        updateSlide();
+        resetTimer();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (isTransitioning || counter <= 0) return;
+        counter--;
+        updateSlide();
+        resetTimer();
+    });
+
+    // 5. 【重要】アニメーション終了時の瞬間移動（ループ処理）
+    track.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        
+        // 「最後の画像の分身（右端）」まで来たら、「本物の1枚目（左側）」へ瞬間移動
+        if (slides[counter].id === 'first-clone') {
+            track.style.transition = "none"; // アニメーションOFF
+            counter = 1; // 本物の1枚目の位置
+            track.style.transform = `translateX(${-100 * counter}%)`;
+        }
+        
+        // 「1枚目の画像の分身（左端）」まで来たら、「本物の最後（右側）」へ瞬間移動
+        if (slides[counter].id === 'last-clone') {
+            track.style.transition = "none"; // アニメーションOFF
+            counter = slides.length - 2; // 本物の最後の位置
+            track.style.transform = `translateX(${-100 * counter}%)`;
+        }
+    });
+
+    // 6. 自動再生
+    let autoPlayTimer = setInterval(() => {
+        if (!isTransitioning && counter < slides.length - 1) {
+            counter++;
+            updateSlide();
+        }
+    }, 3000);
+
+    function resetTimer() {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = setInterval(() => {
+            if (!isTransitioning && counter < slides.length - 1) {
+                counter++;
+                updateSlide();
+            }
+        }, 3000);
+    }
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,483 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  background: linear-gradient(57deg, #0a7ce087, #135cdae2,#0d0dd8ec);
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero{
+  color: white;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 6rem;
+  margin-bottom: 10px;
+}
+
+.hero .subtitle{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero .description{
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.btn-primary{
+  display: inline-block;
+  background-color: #e67e22;
+  color: white;
+  padding: 15px 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover{
+  background-color: #d35400;
+}
+
+.features{
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0a7ce087, #2e6cd5e2);
+}
+
+.features .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: #c2daf3;
+}
+
+.feature-card{
+  border: 1.5px solid #0e6ca3;
+  border-radius: 10px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1000px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.feature-text{
+  flex: 1;
+  text-align: left;
+}
+
+.feature-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* 画像のデザイン */
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* 画像に影をつけて浮き上がらせる */
+  border: 1px solid #eee;
+}
+
+.icon-wrapper{
+  margin-bottom: 15px;
+}
+
+.icon-wrapper i{
+  font-size: 3rem;
+  color: #3498db;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-card h2{
+  font-size: 1.7rem;
+  margin-bottom: 15px;
+  color: #f2f3f4;
+  text-align: center;
+  text-align: left;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.feature-card ul{
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.feature-card li{
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.note{
+  font-size: 0.8rem;
+  color:#7f8c8d;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.note.highlight{
+  color: #c0392b;
+  background-color: #fdeaea;
+}
+
+.target{
+  padding: 80px 0;
+  margin-bottom: 20px;
+}
+
+.target h2 {
+    margin-bottom: 50px;
+    font-size: 2rem;
+    color: #ffffff;
+    position: relative;
+    display: inline-block;
+}
+
+/* タイトルの下に線を引く装飾 */
+.target h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #3498db;
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+
+/* グリッドレイアウト（箱を並べる設定） */
+.target-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2列にする */
+    gap: 30px; /* 箱同士の間隔 */
+    max-width: 800px;
+    margin: 0 auto; /* 中央寄せ */
+}
+
+/* 個々のカードデザイン */
+.target-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    display: flex; /* アイコンと文字を横並び */
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s;
+}
+
+.target-card:hover {
+    transform: translateY(-5px); /* ホバー時に少し浮く */
+}
+
+/* アイコンのデザイン */
+.target-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #eaf2f8; /* 薄い青背景 */
+    color: #3498db; /* アイコンの色 */
+    border-radius: 50%; /* 丸くする */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* アイコンが潰れないようにする */
+}
+
+.target-card p {
+    font-weight: bold;
+    color: #34495e;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+}
+
+.target-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.target-item{
+  background: rgb(104, 103, 103);
+  padding: 15px 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.target-item::before{
+  content:"✔";
+  color: #27ae60;
+  margin-right: 10px;
+}
+
+.cta-bottom{
+  padding: 60px 20px;
+  background: linear-gradient(135deg,#cbeafc, #94ccfe);
+  border-top: 1px solid #e0e0e0;
+}
+
+.cta-bottom h2{
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.cta-bottom p {
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.footer-notes{
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.footer-notes p {
+    font-size: 0.8rem;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: #bdc3c7;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* スマホ対応：1列に戻す */
+@media (max-width: 768px) {
+    .target-grid {
+        grid-template-columns: 1fr; /* 1列にする */
+    }
+    
+    .target-card {
+        padding: 20px;
+    }
+}
+
+/* ジグザグ配置用：PC画面のときだけ逆順にする */
+@media (min-width: 769px) {
+    .feature-card.reverse {
+        flex-direction: row-reverse; /* 横並びの順序を逆（画像←文章）にする */
+    }
+}
+
+/* レスポンシブ対応（スマホ向け） */
+@media (max-width: 768px) {
+    .features .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-card {
+        flex-direction: column; /* 縦並びに戻す */
+        padding: 30px 20px;
+    }
+
+    .feature-card {
+        flex-direction: column; /* 縦並びに戻す */
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+/* =========================================
+   追従ヘッダーの設定
+========================================= */
+.sticky-header {
+    position: fixed; /* 画面に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(135deg, #fdfdfde4,#dae5fde1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 影をつけて浮いてる感を出す */
+    
+    display: flex;
+    justify-content: space-between; /* 左右に配置 */
+    align-items: center;
+    padding: 0 20px;
+    
+    z-index: 1000; /* 他の要素より手前に表示 */
+    
+    /* アニメーション用：最初は上に隠しておく */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
+
+/* JavaScriptでこのクラスがつくと表示される */
+.sticky-header.visible {
+    transform: translateY(0);
+}
+
+/* ヘッダー内のロゴ */
+.header-logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #21262a;
+}
+
+/* 右側のエリア（ボタンとハンバーガーを横並び） */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ヘッダー用のボタン（Heroのものより少し小さく調整） */
+.sticky-header .btn-primary {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+
+
+/* カルーセルの外枠（窓枠） */
+.hero-image-wrapper {
+    margin-top: 50px;
+    padding: 0; /* paddingは削除して幅いっぱいに */
+    width: 100%;
+    max-width: 800px; /* 画像の最大幅 */
+    margin-left: auto; /* 中央寄せ */
+    margin-right: auto;
+    position: relative; /* ボタンをこの中に配置するため */
+    overflow: hidden;   /* 枠からはみ出た画像（2枚目以降）を隠す */
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 5px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 画像を横に並べる長いトラック */
+.carousel-track {
+    display: flex; /* 横並びにする */
+    width: 100%;
+}
+
+/* 個々の画像スライド */
+.carousel-slide {
+    width: 100%;       /* 枠いっぱいの幅 */
+    flex-shrink: 0;    /* 縮まないように固定 */
+    height: auto;
+    aspect-ratio: 16 / 9; /* アスペクト比を固定（ガタつき防止） */
+    object-fit: cover;
+}
+
+/* 左右の矢印ボタン共通 */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5); /* 半透明の黒 */
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* 下部のドットナビゲーション */
+.carousel-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: white; /* 選択中は真っ白 */
+}
+
+/* SNSアイコンを並べる箱 */
+.footer-sns {
+    display: flex;
+    justify-content: center; /* 中央寄せ */
+    gap: 25px; /* アイコン同士の間隔 */
+    margin-bottom: 20px; /* 下のコピーライトとの隙間 */
+}
+
+/* SNSアイコン共通設定 */
+.sns-link {
+    color: white; /* 通常時の色 */
+    font-size: 1.8rem; /* アイコンの大きさ */
+    transition: transform 0.3s, color 0.3s;
+    display: inline-block;
+}
+
+/* ホバー時の動き（少し浮いて色がつく） */
+.sns-link:hover {
+    transform: translateY(-3px); /* 上にぴょこっと浮く */
+}
+
+/* 各SNSのブランドカラー（ホバー時） */
+.sns-link.instagram:hover {
+    color: #e130bb; /* インスタのピンク */
+}
+
+.sns-link.x-twitter:hover {
+    color: #aab8c2; /* Xのグレー（背景が暗いので明るめに） */
+}
+
+.sns-link.youtube:hover {
+    color: #ff0000; /* YouTubeの赤 */
+}
